@@ -1,0 +1,79 @@
+pour utiliser git
+il faut le télécharger dans le site git-scm.com
+l'installer en tappant suivant jusqu'a la fin,
+lancer git bash
+tapper git --version pour savoir la version de git
+
+
+
+----configuration
+git config --global user.name 'nomutilisateur'
+git config --global user.email 'email du l'utilisateur'
+
+
+---qlq commandes
+pwd ---pour savoir où l'on est dans le repertoir
+mkdir ---pour créer un dossier
+cd fichier --pour se déplacer dans un fichier
+cd ../ pour revenir en arrière
+
+-----------------intialisation
+git init ----pour initialiser git
+git status ---pour voir tous les fichier dans notre dossier
+
+--------------ajout
+pour ajouter un fichier dans notre dossier
+git add nomfichier1 nomfichier2 ou git add . pour ajouter tous les fichiers en mem temps
+git reset nomfichier ----pour supprimer un fichier
+
+
+----------faire le dépot
+git commit -m"message de description" pour ajouter un dépot et faire des commentaires
+
+------voir les differences
+après la modification d'un fichier git
+git diff --toutes les différences des fichiers modifiés
+git diff --cached pour afficher les modifications présentes
+
+---------modification remote branch
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+
+
+-------------------------------------------------------------------------
+comment contribuer dans un projet opensource
+on se connecte dans notre compte github, via le lien du projet opensource
+on clique sur fork, on copie le lien dans le button vert puis dans l'invite de commande de notre
+git, puis on tappe la commande git clone on colle l'url du projet forké.
+ de là, on s'y déplace en tappant cd nomfichierforké
+ainsi, git switch -c nomduprojetcheznous (nouveau nom local)
+cd nomduprojetchznous
+
+ainsi l'ouvrir en local et le modifier
+
+puis dans le terminal (invite de commande)
+on tappe git commit -a -m "message"
+git push
+copier et coller la ligne comme c'est une nouvelle branche
+
+ainsi dans notre compte github on aura le bouton compare and pull request on y appue *
+voir les diffrence et faire un commentaire puis taper sur pull request
+
+ainsi le propri aura une notife pull request q'il pourra ouvrir et ajouter, repondre
+choisir la derniere option pour avoir le modifié du fichier
+
+
+git remote -vvv pour les misesajure des projets
+puis git remote add 'nomfichier' et coller l'url du proprietaire
+puis git checkout master ou main pour s'y deplacer
+git pull nomfichier pour l'avoir
+puis git log pour voir tt sa
+git push origin master ou main pour modifier notre projet sur github
+
+
+--------utilisation de la clé SSH
+pour la générer il suffit de tapper la commande ssh-keygen
+dans github->settings->SSH and GPG keys
+puis aller dans le dossier .ssh ouvrir la clé public copier et aller dans le profil
+github,github->settings->SSH and GPG keys coller laba
